@@ -1,9 +1,4 @@
-var room = HBInit({
-	roomName: "HAND v3",
-	maxPlayers: 12,
-	noPlayer: true // Remove host player (recommended!)
-  public: true,
-});
+var room = HBInit({ roomName: "Hand v3", maxPlayers: 12, playerName : "Host", public : true});
 room.setDefaultStadium("Classic");
 room.setScoreLimit(3);
 room.setTimeLimit(3);
