@@ -1,9 +1,13 @@
-var room = HBInit({ roomName: "Hand v3", maxPlayers: 12, playerName : ":)", public : true});
+var room = HBInit({
+	roomName: "Hand v3",
+	maxPlayers: 12,
+	noPlayer: true // Remove host player (recommended!)
+ public : true,
+});
 room.setDefaultStadium("Classic");
 room.setScoreLimit(3);
-room.setTimeLimit(4);
- 
- 
+room.setTimeLimit(3);
+
 // If there are no admins left in the room give admin to one of the remaining players.
 function updateAdmins() { 
   // Get all players
